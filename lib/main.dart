@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
         ),
         home: const SplashPage(),
         routes: {
+          // skdnlsdlas;a
           LanguagePage.id: (context) => const LanguagePage(),
         },
       ),
