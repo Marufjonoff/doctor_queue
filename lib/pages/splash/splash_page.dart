@@ -19,7 +19,7 @@ class _SplashPageState extends State<SplashPage> {
   }
 
   void pageToPage() async {
-    await Future.delayed(const Duration(seconds: 2)).then((value) => {
+    await Future.delayed(const Duration(seconds: 3)).then((value) => {
       Navigator.pushReplacementNamed(context, LanguagePage.id),
     });
   }
@@ -27,7 +27,6 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromRGBO(11, 99, 246, 1),
       body: Center(
         child: Image(
           height: 200.h,
