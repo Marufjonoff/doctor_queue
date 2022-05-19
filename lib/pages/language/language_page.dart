@@ -1,4 +1,5 @@
 import 'package:doctor_queue/anime/anime.dart';
+import 'package:doctor_queue/pages/onboarding/onboarding_page.dart';
 import 'package:doctor_queue/views/button_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -14,7 +15,7 @@ class LanguagePage extends StatefulWidget {
 class _LanguagePageState extends State<LanguagePage> {
   
   void languageSelect() {
-
+    Navigator.pushReplacementNamed(context, OnBoardingPage.id);
   }
   
   @override
