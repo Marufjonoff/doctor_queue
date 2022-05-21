@@ -14,7 +14,8 @@ Widget materialButton(void Function() onPressed, BuildContext context, String te
       shape: OutlineInputBorder(
         borderRadius: BorderRadius.circular(borderRadius.r),
         borderSide: const BorderSide(
-          color: Color.fromRGBO(41, 114, 254, 0.1),
+          width: 1.5,
+          color: Color.fromRGBO(41, 114, 254, 1),
         )
       ),
     ),
