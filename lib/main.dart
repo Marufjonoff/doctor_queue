@@ -1,4 +1,6 @@
 import 'package:doctor_queue/pages/language/language_page.dart';
+import 'package:doctor_queue/pages/login/login_page.dart';
+import 'package:doctor_queue/pages/onboarding/onboarding_page.dart';
 import 'package:doctor_queue/pages/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(428, 926),
+      designSize: const Size(360, 672),
       builder: (context, widget) => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'DoctorQ',
@@ -25,6 +27,8 @@ class MyApp extends StatelessWidget {
         home: const SplashPage(),
         routes: {
           LanguagePage.id: (context) => const LanguagePage(),
+          OnBoardingPage.id: (context) => const OnBoardingPage(),
+          LoginPage.id: (context) => const LoginPage(),
         },
       ),
     );
